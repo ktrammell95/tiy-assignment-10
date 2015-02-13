@@ -1,16 +1,17 @@
 .container {
   width: 100%;
   font-family: "Arial","Helvetica",sans-serif;
+  margin: auto;
   .header {
     width: 1024px;
     margin: auto;
     height: 75px;
-    background-color: #FFFFFF;
+    // background-color: #FFFFFF;
     .inside-header {
       width: 100%;
       height: 65px;
       box-sizing: border-box;
-      background-color: #FFFFFF;
+      // background-color: #FFFFFF;
       .title {
         float: left;
         display: inline-block;
@@ -26,10 +27,10 @@
         float: left;
         width: 30%;
         height: 30px;
-        .search-square {
+        .search-field {
           border: 1px solid #d0d0d0;
           border-radius: 3px;
-          background-color: #fcfcfc;
+          // background-color: #fcfcfc;
           width: 71%;
           float: left;
           height: 30px;
@@ -99,12 +100,12 @@
   }//header ends here
   .content {
     width: 100%;
-    background-color: #CDC9C6;
+    // background-color: #CDC9C6;
     .side-bar {
       width: 25%;
       height: 100%;
       float: left;
-      background-color: #ffffff;
+      // background-color: #ffffff;
       .results {
         font-size: 13px;
         color:#666;
@@ -218,15 +219,34 @@
           float: right;
         }
       }//search-header ends here
-      .listing {
-        width: 150px;
-        height: 150px;
-        background-color: grey;
-        border: 1px solid white;
-        float: left;
-        padding: 20px;
-        margin: 20px;
-      }//listing ends here
+      .prod-content { 
+        width: 100%;
+        float: right;
+        .products {
+            width: 214px;
+            height: 170px;
+            background-color: grey;
+            float: left;
+            padding: 20px;
+            margin: 20px;
+          .prod-image{
+            width: 170px;
+            height: 135px;
+          }
+          .prod-title {
+            font-size: 13px;
+          }//prod title 
+          .shop {
+            font-size: 13px;
+          }
+          .prod-price {
+            font-size: 13px;
+          }
+          .curr-code{
+            font-size: 13px;
+          }             
+        }//products ends here
+      }//prod-content
       .search-results {
         float: clear;
         .related-to {
@@ -246,4 +266,34 @@
       }//search-results ends here
     }//items ends here
   }//content ends here
+  .footer {
+    width: 1024px;
+    margin: auto;
+    height: 75px;
+    // background-color: #FFFFFF;
+    .col-one {
+      float: left;
+      width: 15%;
+      border: dashed;
+      padding: 10px;
+    }
+    .col-two {
+      float: left;
+      width: 15%;
+      border: dashed;
+      padding: 10px;
+    }
+    .col-three {
+      float: left;
+      width: 15%;
+      border: dashed;
+      padding: 10px;
+    }
+    .col-four {
+      float: left;
+      width: 15%;
+      border: dashed;
+      padding: 10px;
+    }
+  }//footer ends here
 }//container ends here
