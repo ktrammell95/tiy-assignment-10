@@ -1,0 +1,249 @@
+.container {
+  width: 100%;
+  font-family: "Arial","Helvetica",sans-serif;
+  .header {
+    width: 1024px;
+    margin: auto;
+    height: 75px;
+    background-color: #FFFFFF;
+    .inside-header {
+      width: 100%;
+      height: 65px;
+      box-sizing: border-box;
+      background-color: #FFFFFF;
+      .title {
+        float: left;
+        display: inline-block;
+        width: 100px;
+        height: 50px;
+        margin-right: 20px;
+        img {
+          width: 100px;
+          height: 50px;
+        }
+      }//title ends here
+      .search {
+        float: left;
+        width: 30%;
+        height: 30px;
+        .search-square {
+          border: 1px solid #d0d0d0;
+          border-radius: 3px;
+          background-color: #fcfcfc;
+          width: 71%;
+          float: left;
+          height: 30px;
+            input {
+              color: #bcbcbc;
+            }
+        }
+        .search-button {
+          background-color: #54ACC7;
+          // border-radius: 5px;
+          position:relative;
+          left: -10px;
+          border: 1px solid #adc5cf;
+          width: 25%;
+          height: 34px;
+          line-height: 25px;
+          text-align: center;
+          color: white;
+          font-size: 12px;
+          float: right;
+          border-radius: 3px;
+        }
+      }//search ends here
+      .browse {
+        width: 8%;
+        height: 30px;
+        float: left;
+        display: inline-block;
+        .browse-button {
+          float: left;
+          border: 1px solid #adc5cf;
+          width: 100%;
+          height: 34px;
+          line-height: 25px;
+          color: white;
+          font-size: 12px;
+        }
+      }//browse ends here
+      .icons {
+        width: 35%;
+        height: 60px;
+        float: right;
+        display: inline-block;
+          div div {
+            float: left;
+            border-right: 1px solid #DCDCD8;
+            padding-right: 5px;
+            padding-left: 5px;
+            width: 65px;
+            text-align: center;
+            img {
+            width: 25px;
+            height: 25px;
+            // padding-left: 9px;
+          }
+            .avatarimg {
+            border-radius: 25px;
+            }
+            p {
+              padding-right: 5px;
+              font-size: 9px;
+              margin-top: 5px;
+            }
+          }
+        }    
+    }//inside-header ends here
+  }//header ends here
+  .content {
+    width: 100%;
+    background-color: #CDC9C6;
+    .side-bar {
+      width: 25%;
+      height: 100%;
+      float: left;
+      background-color: #ffffff;
+      .results {
+        font-size: 13px;
+        color:#666;
+        margin-bottom: 6px;
+        margin-top: 1px;
+      }//results ends here
+      .item-type {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+          .radio-buttons {
+              list-style: none;
+              a {
+                text-decoration: none;
+              }
+          }//radio-buttons end here
+      }//item-type ends here
+      .categories {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+          .levelone {
+            font-weight: 600;
+            margin-top: 10px;
+            padding-top: 0;
+            color: #0192b5;
+            line-height: 17px;
+            list-style: none;
+          }//levelone ends here
+          .leveltwo {
+            margin-left: 10px;
+            line-height: 17px;
+            padding-top: 4px;
+            list-style: none;
+          }//leveltwo ends here
+      }//categories ends here
+      .price-filter {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+      }//price-filter ends here
+      .color-filter {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+        .color-content {
+            list-style: none;
+            .swatch .red {
+              position: relative;
+              display:inline-block;
+              width: 18px;
+              height: 18px;
+              margin: 0;
+              border-radius: 3px;
+              padding: 0;
+              border: 1px solid #e2e2e2;
+              background-color: red;
+            }
+          }//color-content ends here
+      }//color-filter ends here
+      .ordering-options {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+      }//ordering-options ends here
+      .shops-location {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+      }//shops-location ends here
+      .ships-to {
+        font-size: 13px;
+        line-height: 13px;
+        color: #666;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #dfdfdf;
+        padding: 18px 0;
+      }//ships-to ends here
+    }//side-bar ends here
+    .items {
+      width: 728px;
+      height: 1000px;
+      float: right;
+      font-size: 13px;
+      line-height: 18px;
+      margin-bottom: 7px;
+      .search-header {
+        height: 30px;
+        .keyword {
+          float: left;
+        }
+        .sort-by {
+          float: right;
+        }
+      }//search-header ends here
+      .listing {
+        width: 150px;
+        height: 150px;
+        background-color: grey;
+        border: 1px solid white;
+        float: left;
+        padding: 20px;
+        margin: 20px;
+      }//listing ends here
+      .search-results {
+        float: clear;
+        .related-to {
+            font-size: 13px;
+          .related-options ul {
+            list-style: none;
+            display: block;
+          }//related-options
+        }//related-to
+        .shop-sug {
+          font-size: 13px;
+          }//shop.sug
+        .pagnation ol{
+          list-style: none;
+          display: block;
+        }//pagnation
+      }//search-results ends here
+    }//items ends here
+  }//content ends here
+}//container ends here
