@@ -59,24 +59,24 @@
         <div class ="results">Show results for:</div>
 
         <div class="item-type"><h4>Item Type</h4>
-          <ul class ="radio-buttons">
+          <ul class="radio-buttons">
             <li>
-              <label><input type ="radio" name="itemtype">
+              <label><input type="radio" name="itemtype">
               <span> All Items</a></span>
               </label>
             </li>
              <li>
-              <label><input type ="radio" name="itemtype">
+              <label><input type="radio" name="itemtype">
               <span> Handmade</a></span>
               </label>
             </li>
             <li>
-              <label><input type ="radio" name="itemtype">
+              <label><input type="radio" name="itemtype">
               <span> Vintage</a></span>
               </label>
             </li>
             <li>
-              <label><input type ="radio" name="itemtype">
+              <label><input type="radio" name="itemtype">
               <span> Craft Supplies</a></span>
               </label>
             </li>
@@ -110,47 +110,100 @@
         <div class="price-filter"><h4>Price Filter</h4>
           <form class="form">
             <div class="row">
-              <div class="field">
-                <div class="input"></div>
+              <div class="input">$ min</div>
+              <div class="tofield">to</div>
+              <div class="input">$ max</div> 
+              <div class="arrow-btn">
+                <div class="arrow"></div>
               </div>
-              <div class="field">$</div>
-              <div class="field">to</div>
-              <div class="field">$</div>
             </div><!--row ends here-->
           </form>
         </div><!--price-filter ends here-->
         
         <div class="color-filter"><h4>Filter by Color</h4>
           <ul class="color-content">
-            <li class="swatch red"><a href="a">1</a></li><!--red-->
-            <li class="swatch yellow"><a href="a">2</a></li><!--orange-->
-            <li class="swatch orange"><a href="a">3</a></li><!--yellow-->
-            <li class="swatch green"><a href="a">4</a></li><!--green-->
-            <li class="swatch blue"><a href="a"></a>5</li><!--blue-->
-            <li class="swatch purple"><a href="a">6</a></li><!--purple-->
-            <li class="swatch black"><a href="a">7</a></li><!--black-->
-            <li class="swatch white"><a href="a">8</a></li><!--white-->
+            <li class="swatch red"><a href="a"> </a></li><!--red-->
+            <li class="swatch yellow"><a href="a"> </a></li><!--orange-->
+            <li class="swatch orange"><a href="a"> </a></li><!--yellow-->
+            <li class="swatch green"><a href="a"> </a></li><!--green-->
+            <li class="swatch blue"><a href="a"></a> </li><!--blue-->
+            <li class="swatch purple"><a href="a"> </a></li><!--purple-->
+            <li class="swatch black"><a href="a"> </a></li><!--black-->
+            <li class="swatch white"><a href="a"> </a></li><!--white-->
           </ul>
         </div><!--color-filter ends here-->
 
         <div class="ordering-options"><h4>Ordering Options</h4>
-          <div> In Your Favorites</div>
-          <div> Accepts Etsy Gift Cards</div>
-          <div> Customizable </div>
+          <ul class="checkboxes">
+            <li>
+              </label><input type ="checkbox" name="itemtype">
+              <span>In Your Favorites</a></span>
+              </label>
+            </li>
+            <li>
+              </label><input type ="checkbox" name="itemtype">
+              <span>Accepts Etsy Gift Cards</a></span>
+              </label>
+            </li>
+            <li>
+              </label><input type ="checkbox" name="itemtype">
+              <span>Customizable</a></span>
+              </label>
+            </li>
+          </ul>
         </div><!--ordering-options ends here-->
 
         <div class="shops-location"><h4>Shops Location</h4>
-          <div>Anywhere</div>
-          <div>United States</div>
-          <div>Choose a location</div>
+          <ul class="locations">
+            <li>
+              </label><input type ="radio" name="itemtype">
+              <span>Anywhere</a></span>
+              </label>
+            </li>
+            <li>
+              </label><input type ="radio" name="itemtype">
+              <span>United States</a></span>
+              </label>
+            </li>
+          </ul>
+          <div class="choose_loc"><a href="#">Choose a custom location</a></div>
         </div><!--shops-location ends here-->
 
-        <div class="ships-to"><h4>Ships Location</h4>
-          <div> clear</div>
-          <div> United States</div>
-        </div><!--ships-to ends here-->
-      </div><!-- side bar ends here -->
-      
+        <div class="shipping">
+          <div class="ship-header">
+            <div class="ships-to"><h4>Ships To</h4></div>
+            <div class="clear"><a href="#">clear</a></div>
+          </div>
+          <div><!--start dropdown-->
+            <ul class="dropdown">
+              <li>
+                 <form class="common-form">
+                  <div class="locale-selector">
+                    <select class="ship-to-select">
+                      <option>Choose Country</option>
+                        <option value="AU">Australia</option>
+                        <option value="CA">Canada</option>
+                        <option value="FR">France</option>
+                        <option value="DE">Germany</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IT">Italy</option>
+                        <option value="JP">Japan</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="PT">Portugal</option>
+                        <option value="RU">Russia</option>
+                        <option value="ES">Spain</option>
+                        <option value="NL">The Netherlands</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                    </select><!--ship-to-select-->
+                  </div><!--locale-selector-->
+                </form>
+              </li>
+            </ul>
+          </div><!--stop dropdown-->
+        </div> <!--shipping ends here-->
+      </div><!-- side bar ends here --> 
+
       <div class= "items">
         <div class="search-header">
           <div class="keyword">"keyword" <span class="result-count">We found ##### items!</span></div>

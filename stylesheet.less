@@ -1,3 +1,5 @@
+@h4-fontcolor: #666;
+
 body {
   background-color: #D8D5D2;
   .container {
@@ -116,22 +118,25 @@ body {
         width: 25%;
         height: 100%;
         float: left;
-        // background-color: #ffffff;
+        background-color: #ffffff;
         .results {
           font-size: 13px;
-          color:#666;
+          color: @h4-fontcolor;
           margin-bottom: 6px;
           margin-top: 1px;
         }//results ends here
         .item-type {
           font-size: 13px;
           line-height: 13px;
-          color: #666;
+          color: @h4-fontcolor;
           padding-bottom: 6px;
           border-bottom: 1px solid #dfdfdf;
           padding: 18px 0;
             .radio-buttons {
                 list-style: none;
+                color: #0192B5;
+                margin: 0;
+                padding-left: 0;
                 a {
                   text-decoration: none;
                 }
@@ -140,10 +145,14 @@ body {
         .categories {
           font-size: 13px;
           line-height: 13px;
-          color: #666;
+          color: @h4-fontcolor;
           padding-bottom: 6px;
           border-bottom: 1px solid #dfdfdf;
-          padding: 18px 0;
+          margin: 0;
+          padding: 0;
+            ul {
+              list-style: none;
+              padding-left: 0;
             .levelone {
               font-weight: 600;
               margin-top: 10px;
@@ -153,24 +162,70 @@ body {
               list-style: none;
             }//levelone ends here
             .leveltwo {
+              color: #0192b5;
               margin-left: 10px;
               line-height: 17px;
               padding-top: 4px;
               list-style: none;
+              margin-left: 10px;
             }//leveltwo ends here
+          }
         }//categories ends here
         .price-filter {
           font-size: 13px;
+          height: 90px;
           line-height: 13px;
-          color: #666;
+          color: @h4-fontcolor;
           padding-bottom: 6px;
           border-bottom: 1px solid #dfdfdf;
-          padding: 18px 0;
+          padding: 3px 0;
+          .row{
+            display: inline;
+            border-bottom: grey;
+            .input {
+              border: 1px solid #d8d5d2;
+              color: #d8d5d2;
+              border-radius: 3px;
+              background-color: #ffffff;
+              width: 50px;
+              height: 30px;
+              float: left;
+              line-height: 30px;
+              // text-align: center;
+              margin-left: 10px;
+            }
+            .tofield{
+              width: 20px;
+              height: 30px;
+              line-height: 30px;
+              float: left; 
+              text-align: center; 
+              margin-left: 5px;
+              margin-right: -5px;            
+            }
+            .arrow-btn {
+              border: 1px solid #d8d5d2;
+              border-radius: 3px;
+              // background-color: #ffffff;
+              width: 50px;
+              height: 30px;
+              float: left;
+              margin-left: 10px;
+              .arrow {
+                width: 0;
+                height: 0;
+                margin: 8px 20px 8px 20px;
+                border-style: solid;
+                border-width: 7.5px 0 7.5px 9px;
+                border-color: transparent transparent transparent #7d7773;
+              }  
+            }
+          }
         }//price-filter ends here
         .color-filter {
           font-size: 13px;
           line-height: 13px;
-          color: #666;
+          color: @h4-fontcolor;
           padding-bottom: 6px;
           border-bottom: 1px solid #dfdfdf;
           padding: 18px 0;
@@ -178,6 +233,7 @@ body {
           .color-content {
               list-style: none;
               display: inline;
+              padding: 0;
               .swatch {
                 // position: relative;
                 display:inline-block;
@@ -217,30 +273,59 @@ body {
         .ordering-options {
           font-size: 13px;
           line-height: 13px;
-          color: #666;
+          color: @h4-fontcolor;
           padding-bottom: 6px;
           border-bottom: 1px solid #dfdfdf;
           padding: 18px 0;
+            .checkboxes {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              color: #0192b5;
+            }
         }//ordering-options ends here
         .shops-location {
           font-size: 13px;
           line-height: 13px;
-          color: #666;
+          color: @h4-fontcolor;
           padding-bottom: 6px;
           border-bottom: 1px solid #dfdfdf;
           padding: 18px 0;
+            .locations {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              color: #0192b5;
+              margin-top: 10px;
+            }
+            .choose_loc {
+              color: #0192b5;
+              margin-top: 10px;
+              a {
+                text-decoration: none;
+                color: #0192b5;
+              }
+            }
         }//shops-location ends here
-        .ships-to {
-          font-size: 13px;
-          line-height: 13px;
-          color: #666;
-          padding-bottom: 6px;
-          border-bottom: 1px solid #dfdfdf;
-          padding: 18px 0;
-        }//ships-to ends here
+        .shipping {
+          .ship-header {
+            .ships-to {
+            font-size: 13px;
+            line-height: 13px;
+            color: @h4-fontcolor;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #dfdfdf;
+            padding: 18px 0;
+            }//ships-to ends here
+          }
+           .dropdown {
+            list-style: none;
+          }
+        }//shipping ends here
       }//side-bar ends here
+
       .items {
-        width: 750px;
+        width: 75%;
         height: 1000px;
         float: right;
         font-size: 13px;
@@ -289,6 +374,7 @@ body {
             }          
           }//products ends here
         }//prod-content
+        
         .search-results {
           float: clear;
           .related-to {
