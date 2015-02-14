@@ -32,27 +32,22 @@ $(function(){
    getData(keywords, function(data) {
     var items = data.results;
     console.log(items);
-      $(".products").empty();
+      $(".prod-content").empty();
       items.forEach(function(item) {
-        $(".products").append(prodTemplate(item));
+        $(".prod-content").append(prodTemplate(item));
       }); 
     });
   });
 
 // product template
   var prodTemplate = _.template(
-    "<div class='products'>" +
-      "<div class='prod-image'>" +
-          "<img src='<%= Images[0].url_170x135 %>'>" + 
+    "<div class='products'>" + 
+      "<div class='prod-image'>" + "<img src='<%= Images[0].url_170x135 %>'>" + 
           "</div>" +
-      "<div class='product-title'>" +
-         "<%= title %></div>" +
-      "<div class='shop'>" + 
-        "<%= Shop.shop_name %></div>" +
-      "<div class='price'>" + 
-        "<%= price %></div>" +
-      "<div class='curr-code'>" + 
-        "<%= currency_code %></div>" +
+      "<div class='title'>" + "<%= title %></div>" +
+      "<div class='shop'>" + "<%= Shop.shop_name %></div>" +
+      "<div class='price'>" + "$<%= price %> <%= currency_code %></div>" +"</div>"
+       +
     "</div>"  
   );
 });
