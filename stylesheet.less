@@ -1,5 +1,6 @@
 @h4-fontcolor: #666;
-// @h5-margin:
+@h4-font-size: 14px;
+@section-border: 1px solid #dfdfdf;
 
 body {
   background-color: #EFEFEB;
@@ -13,17 +14,18 @@ body {
     // border-bottom: 1px solid grey;
 //header    
     .header {
-      width: 980px;
+      width: 100%;
       margin: auto;
       height: 75px;
       background-color: #FFFFFF;
       padding-top: 10px;
-      border-bottom: 1px solid grey;
+      border-bottom: 1px #d0d0d0;
       .inside-header {
-        width: 100%;
+        width: 980px;
         height: 65px;
         box-sizing: border-box;
         background-color: #FFFFFF;
+        margin: auto;
         .title {
           float: left;
           display: inline-block;
@@ -39,6 +41,7 @@ body {
           float: left;
           width: 30%;
           height: 30px;
+          margin-top: 8px;
           .search-field {
             border: 1px solid #d0d0d0;
             border-radius: 3px;
@@ -68,17 +71,29 @@ body {
         }//search ends here
         .browse {
           width: 8%;
+          margin-top: 8px;
           height: 30px;
           float: left;
           display: inline-block;
           .browse-button {
             float: left;
-            border: 1px solid #adc5cf;
+            border: 1px solid #d8d5d2;
+            color:  @h4-fontcolor;
+            border-radius: 3px;
+            background-color: #ffffff;
             width: 100%;
             height: 34px;
-            line-height: 25px;
-            color: white;
-            font-size: 12px;
+            line-height: @h4-font-size;
+            text-align: left;
+            font-size: @h4-font-size;
+            .arrow-up {
+              width: 0; 
+              height: 0; 
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              
+              border-bottom: 5px solid black;
+            }
           }
         }//browse ends here
         .icons {
@@ -95,6 +110,7 @@ body {
               padding-left: 5px;
               width: 65px;
               text-align: center;
+              color:  @h4-fontcolor;
               img {
               width: 25px;
               height: 25px;
@@ -108,7 +124,7 @@ body {
               }
               p {
                 padding-right: 5px;
-                font-size: 9px;
+                font-size: @h4-font-size;
                 margin-top: 5px;
               }
             }
@@ -119,7 +135,7 @@ body {
 //content    
     .content {
       width: 980px;
-      height: 100%;
+      min-height: 1500px;
       margin: auto;
       padding-top: 25px;
       background-color: #EFEFEB;
@@ -129,7 +145,7 @@ body {
         float: left;
         margin-right: 28px;
         .results {
-          font-size: 13px;
+          font-size: @h4-font-size;
           color: @h4-fontcolor;
           margin-bottom: 6px;
           margin-top: 1px;
@@ -138,16 +154,16 @@ body {
         .sidebar-options{
           width: 100%;
           // min-height: 1185px;
-          border: 1px solid black;
+          border: @section-border;
           background-color: #ffffff;
           padding-left: 10px;
           .item-type {
-            font-size: 13px;
-            line-height: 13px;
+            font-size: @h4-font-size;
+            line-height: @h4-font-size;
             color: @h4-fontcolor;
             padding-bottom: 5px;
             padding-top: 0;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
               .radio-buttons {
                   list-style: none;
                   color: #0192B5;
@@ -159,11 +175,11 @@ body {
               }//radio-buttons end here
           }//item-type ends here
           .categories {
-            font-size: 13px;
-            line-height: 13px;
+            font-size: @h4-font-size;
+            line-height: @h4-font-size;
             color: @h4-fontcolor;
             padding-bottom: 6px;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
             margin: 0;
             padding: 0;
               ul {
@@ -188,12 +204,12 @@ body {
             }
           }//categories ends here
           .price-filter {
-            font-size: 13px;
+            font-size: @h4-font-size;
             height: 90px;
-            line-height: 13px;
+            line-height: @h4-font-size;
             color: @h4-fontcolor;
             padding-bottom: 6px;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
             padding: 3px 0;
             .row{
               display: inline;
@@ -239,11 +255,11 @@ body {
             }
           }//price-filter ends here
           .color-filter {
-            font-size: 13px;
-            line-height: 13px;
+            font-size: @h4-font-size;
+            line-height: @h4-font-size;
             color: @h4-fontcolor;
             padding-bottom: 6px;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
             padding: 18px 0;
             // display: inline-block;
             .color-content {
@@ -287,11 +303,11 @@ body {
               }//color-content ends here
           }//color-filter ends here
           .ordering-options {
-            font-size: 13px;
-            line-height: 13px;
+            font-size: @h4-font-size;
+            line-height: @h4-font-size;
             color: @h4-fontcolor;
             padding-bottom: 6px;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
             padding: 18px 0;
               .checkboxes {
                 list-style: none;
@@ -301,11 +317,11 @@ body {
               }
           }//ordering-options ends here
           .shops-location {
-            font-size: 13px;
-            line-height: 13px;
+            font-size: @h4-font-size;
+            line-height: @h4-font-size;
             color: @h4-fontcolor;
             padding-bottom: 6px;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
             padding: 18px 0;
               .locations {
                 list-style: none;
@@ -324,10 +340,10 @@ body {
               }
           }//shops-location ends here
           .shipping {
-            font-size: 13px;
-            line-height: 13px;
+            font-size: @h4-font-size;
+            line-height: @h4-font-size;
             padding-bottom: 6px;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: @section-border;
             padding: 18px 0;
             .ship-header {
               color: @h4-fontcolor;
@@ -352,6 +368,19 @@ body {
             }//ship-header ends here
             .dropdown {
             list-style: none;
+             select {
+               -webkit-appearance: none;
+               -moz-appearance: none;
+                appearance: none;
+                margin: -35px;
+                border: 1px solid #111;
+                background: transparent;
+                width: 200px;
+                padding: 5px;
+                font-size: 12px;
+                border: 1px solid #ccc;
+                height: 34px;
+              }
             }
           }//shipping ends here
         }//sidebar-options ends here
@@ -417,7 +446,7 @@ body {
         }//prod-content
         .footer-one {
           width: 100%;
-          height: 100%;
+          height: 220px;
           clear: both;
           background-color: #EFEFEB;
           // .search-results {
@@ -480,14 +509,10 @@ body {
               }
           //}//search-results ends here
         }//footer-one
-      }//items ends here
-    
-   
         .footer-two {
           clear: both;
           width: 100%;
           height: 100%;
-          // max-height: 1500px;
           font-family: "Arial","Helvetica",sans-serif;
           margin: auto;
           background-color: #EFEFEB;
@@ -501,7 +526,8 @@ body {
                   padding: 0;
                 }
               }
-        }//footer ends here
+          }//footer ends here
+        }//items ends here
       }//content ends here
     }//container ends here 
 }//body
