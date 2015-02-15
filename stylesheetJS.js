@@ -27,7 +27,7 @@ $(function(){
     event.preventDefault();
     
     var keywords = $(".search-field").val();
-        // alert(keywords);
+        console.log(keywords);
       
    getData(keywords, function(data) {
     var items = data.results;
@@ -38,6 +38,7 @@ $(function(){
       }); 
     });
   });
+
 
 // product template
   var prodTemplate = _.template(

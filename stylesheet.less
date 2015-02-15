@@ -10,6 +10,7 @@ body {
     font-family: "Arial","Helvetica",sans-serif;
     margin: auto;
     background-color: #EFEFEB;
+    font-size: 14px;
 //header    
     .header {
       width: 100%;
@@ -62,7 +63,7 @@ body {
             line-height: 25px;
             text-align: center;
             color: white;
-            font-size: 12px;
+            // font-size: 12px;
             float: right;
             border-radius: 3px;
           }
@@ -376,7 +377,7 @@ body {
                 background: transparent;
                 width: 200px;
                 padding: 5px;
-                font-size: 12px;
+                // font-size: 12px;
                 border: 1px solid #ccc;
                 height: 34px;
               }
@@ -389,18 +390,21 @@ body {
         width: 74%;
         height: 1000px;
         float: right;
-        font-size: 13px;
+        // font-size: 13px;
         line-height: 18px;
         margin-bottom: 7px;
         .search-header {
           height: 30px;
-          .keyword {
+          margin-top: 17px;
+          .keyword-return {
             float: left;
             margin-left: 28px;
+            width: 70%;
+            float: left;
           }
           .sort-by {
             float: right;
-            margin-right: 45px;
+            margin-right: 60px;
             span {
               color: #0192b5;
             }
@@ -465,7 +469,7 @@ body {
           // .search-results {
           //   width: 100%;
             .related-to {
-                font-size: 14px;
+                // font-size: 14px;
                 line-height: 14px;
                 color: @h4-fontcolor;
                 font-size: @h4-font-size;
@@ -550,9 +554,10 @@ body {
                 float: left;
                 width: 15%;
                 padding: 20px;
+                line-height: 25px;
                 h5 {
                   color: @h4-fontcolor;
-                  font-size: 12px;
+                  // font-size: 14px;
                   font-weight: 600;
                 }
                 ul {
@@ -567,11 +572,16 @@ body {
                   border: 1px solid #adc5cf;
                   width: 81%;
                   height: 34px;
-                  line-height: 25px;
+                  line-height: 34px;
                   text-align: center;
                   color: white;
-                  font-size: 14px;
+                  // font-size: 14px;
                   border-radius: 3px;
+                }
+                img {
+                  width:  25px;
+                  height: 15px;
+                  vertical-align: middle;
                 }
               }
           }//footer ends here
