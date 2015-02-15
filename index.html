@@ -9,11 +9,11 @@
   <script src="stylesheetJS.js"> </script>
   <title>Etsy</title>
 </head>
-<body>
 
+
+<body>
   <div class ="container">
-    
-<!---Header-->
+    <!---Header-->
     <div class ="header">
       <div class ="inside-header">
         <div class="title">
@@ -21,7 +21,7 @@
         </div><!-- title ends here -->
         <div class="search">
           <form class="search-form" action="" method="">
-            <span>
+            <span></span>
             <input type = "text" class="search-field" name="search" placeholder="enter keywords">
             <input type = "submit" class = "search-button" name="submit"value="Search">
           </form>
@@ -30,237 +30,217 @@
         <input type = "button" class = "browse-button" value="Browse">
         </div><!-- browse ends here -->
         <div class="icons">
-          <div>
-            <div><img src="house.jpeg" alt="Home" class="homeimg">
-            <p>Home</p>
+          <!-- <div> -->
+            <div class="home">
+              <img src="house.jpeg" alt="Home" class="homeimg">
+              <p>Home</p>
             </div>
 
-            <div><img src="heart.jpeg" alt="Favorites" class ="favoritesimg">
-            <p>Favorites</p>
+            <div class="heart">
+              <img src="heart.jpeg" alt="Favorites" class ="favoritesimg">
+              <p>Favorites</p>
             </div>
 
-            <div>
-            <img src="headshot.jpg" alt="You" class="avatarimg">
-            <p class = "avatar">You</p>
+            <div class="avatar">
+              <img src="headshot.jpg" alt="You" class="avatarimg">
+              <p>You</p>
             </div>
 
-            <div><img src="icon-cart-2.png" alt="Cart" class="cartimg">
-            <p class="cart">Cart</p>
+            <div class="cart">
+              <img src="icon-cart-2.png" alt="Cart" class="cartimg">
+              <p>Cart</p>
             </div>
-          </div>
+          <!-- </div> -->
         </div> <!-- icons ends here -->
       </div> <!-- inside-header ends here -->
     </div> <!-- header ends here -->
 <!--Header End-->
-
-
-   <div class ="content"> 
+    <div class ="content">
       <div class ="side-bar">
         <div class ="results">Show results for:</div>
-
-        <div class="item-type"><h4>Item Type</h4>
-          <ul class="radio-buttons">
-            <li>
-              <label><input type="radio" name="itemtype">
-              <span> All Items</a></span>
-              </label>
-            </li>
-             <li>
-              <label><input type="radio" name="itemtype">
-              <span> Handmade</a></span>
-              </label>
-            </li>
-            <li>
-              <label><input type="radio" name="itemtype">
-              <span> Vintage</a></span>
-              </label>
-            </li>
-            <li>
-              <label><input type="radio" name="itemtype">
-              <span> Craft Supplies</a></span>
-              </label>
-            </li>
-          </ul>
-        </div><!--item-type ends here-->
-
-        <div class="categories"><h4>Categories</h4>
-          <ul>
-            <li class="levelone">Handmade</li>
-              <li class="leveltwo">Glass</li>
-              <li class="leveltwo">Weddings</li>
-              <li class="leveltwo">Housewares</li>
-              <li class="leveltwo">Accessories</li>
-              <li class="leveltwo">Art</li>
-              <li class="leveltwo">Jewelry</li>
-              <li class="leveltwo">Ceramics and Pottery</li>
-              <li class="leveltwo">Clothing</li>
-            <li class="levelone">Vintage</li>
-              <li class="leveltwo">Collectibles</li>
-              <li class="leveltwo">Serving</li>
-              <li class="leveltwo">Housewares</li>
-              <li class="leveltwo">Antique</li>
-            <li class="levelone">Craft Supples</li>
-              <li class="leveltwo">Bead</li>
-              <li class="leveltwo">Commercial</li>
-              <li class="leveltwo">Scrapbooking</li>
-              <li class="leveltwo">Fabric</li>
-          </ul>
-        </div><!--categories ends here-->
-
-        <div class="price-filter"><h4>Price Filter</h4>
-          <form class="form">
-            <div class="row">
-              <div class="input">$ min</div>
-              <div class="tofield">to</div>
-              <div class="input">$ max</div> 
-              <div class="arrow-btn">
-                <div class="arrow"></div>
-              </div>
-            </div><!--row ends here-->
-          </form>
-        </div><!--price-filter ends here-->
-        
-        <div class="color-filter"><h4>Filter by Color</h4>
-          <ul class="color-content">
-            <li class="swatch red"><a href="a"> </a></li><!--red-->
-            <li class="swatch yellow"><a href="a"> </a></li><!--orange-->
-            <li class="swatch orange"><a href="a"> </a></li><!--yellow-->
-            <li class="swatch green"><a href="a"> </a></li><!--green-->
-            <li class="swatch blue"><a href="a"></a> </li><!--blue-->
-            <li class="swatch purple"><a href="a"> </a></li><!--purple-->
-            <li class="swatch black"><a href="a"> </a></li><!--black-->
-            <li class="swatch white"><a href="a"> </a></li><!--white-->
-          </ul>
-        </div><!--color-filter ends here-->
-
-        <div class="ordering-options"><h4>Ordering Options</h4>
-          <ul class="checkboxes">
-            <li>
-              </label><input type ="checkbox" name="itemtype">
-              <span>In Your Favorites</a></span>
-              </label>
-            </li>
-            <li>
-              </label><input type ="checkbox" name="itemtype">
-              <span>Accepts Etsy Gift Cards</a></span>
-              </label>
-            </li>
-            <li>
-              </label><input type ="checkbox" name="itemtype">
-              <span>Customizable</a></span>
-              </label>
-            </li>
-          </ul>
-        </div><!--ordering-options ends here-->
-
-        <div class="shops-location"><h4>Shops Location</h4>
-          <ul class="locations">
-            <li>
-              </label><input type ="radio" name="itemtype">
-              <span>Anywhere</a></span>
-              </label>
-            </li>
-            <li>
-              </label><input type ="radio" name="itemtype">
-              <span>United States</a></span>
-              </label>
-            </li>
-          </ul>
-          <div class="choose_loc"><a href="#">Choose a custom location</a></div>
-        </div><!--shops-location ends here-->
-
-        <div class="shipping">
-          <div class="ship-header">
-            <div class="ships-to"><h4>Ships To</h4></div>
-            <div class="clear"><a href="#">clear</a></div>
-          </div>
-          <div><!--start dropdown-->
-            <ul class="dropdown">
+        <div class="sidebar-options">
+          <div class="categories"><h4>Categories</h4>
+            <ul>
+              <li class="levelone">Handmade</li>
+                <li class="leveltwo">Glass</li>
+                <li class="leveltwo">Weddings</li>
+                <li class="leveltwo">Housewares</li>
+                <li class="leveltwo">Accessories</li>
+                <li class="leveltwo">Art</li>
+                <li class="leveltwo">Jewelry</li>
+                <li class="leveltwo">Ceramics and Pottery</li>
+                <li class="leveltwo">Clothing</li>
+                <li class="levelone">Vintage</li>
+                <li class="leveltwo">Collectibles</li>
+                <li class="leveltwo">Serving</li>
+                <li class="leveltwo">Housewares</li>
+                <li class="leveltwo">Antique</li>
+                <li class="levelone">Craft Supples</li>
+                <li class="leveltwo">Bead</li>
+                <li class="leveltwo">Commercial</li>
+                <li class="leveltwo">Scrapbooking</li>
+                <li class="leveltwo">Fabric</li>
+            </ul>
+          </div><!--categories ends here-->
+          <div class="price-filter"><h4>Price Filter</h4>
+            <form class="form">
+              <div class="row">
+                <div class="input">$ min</div>
+                <div class="tofield">to</div>
+                <div class="input">$ max</div> 
+                <div class="arrow-btn">
+                  <div class="arrow"></div>
+                </div>
+              </div><!--row ends here-->
+            </form>
+          </div><!--price-filter ends here-->
+          <div class="color-filter"><h4>Filter by Color</h4>
+            <ul class="color-content">
+              <li class="swatch red"><a href="a"> </a></li><!--red-->
+              <li class="swatch yellow"><a href="a"> </a></li><!--orange-->
+              <li class="swatch orange"><a href="a"> </a></li><!--yellow-->
+              <li class="swatch green"><a href="a"> </a></li><!--green-->
+              <li class="swatch blue"><a href="a"></a> </li><!--blue-->
+              <li class="swatch purple"><a href="a"> </a></li><!--purple-->
+              <li class="swatch black"><a href="a"> </a></li><!--black-->
+              <li class="swatch white"><a href="a"> </a></li><!--white-->
+            </ul>
+          </div><!--color-filter ends here-->
+          <div class="ordering-options"><h4>Ordering Options</h4>
+            <ul class="checkboxes">
               <li>
-                 <form class="common-form">
-                  <div class="locale-selector">
-                    <select class="ship-to-select">
-                      <option>Choose Country</option>
-                        <option value="AU">Australia</option>
-                        <option value="CA">Canada</option>
-                        <option value="FR">France</option>
-                        <option value="DE">Germany</option>
-                        <option value="IE">Ireland</option>
-                        <option value="IT">Italy</option>
-                        <option value="JP">Japan</option>
-                        <option value="NZ">New Zealand</option>
-                        <option value="PT">Portugal</option>
-                        <option value="RU">Russia</option>
-                        <option value="ES">Spain</option>
-                        <option value="NL">The Netherlands</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="US">United States</option>
-                    </select><!--ship-to-select-->
-                  </div><!--locale-selector-->
-                </form>
+                <label><input type ="checkbox" name="itemtype">
+                <span>In Your Favorites</span>
+                </label>
+              </li>
+              <li>
+                <label><input type ="checkbox" name="itemtype">
+                <span>Accepts Etsy Gift Cards</span>
+                </label>
+              </li>
+              <li>
+                <label><input type ="checkbox" name="itemtype">
+                <span>Customizable</span>
+                </label>
               </li>
             </ul>
-          </div><!--stop dropdown-->
-        </div> <!--shipping ends here-->
-      </div><!-- side bar ends here --> 
-
+          </div><!--ordering-options ends here-->
+          <div class="shops-location"><h4>Shops Location</h4>
+            <ul class="locations">
+              <li>
+                <label><input type ="radio" name="itemtype">
+                <span>Anywhere</span>
+                </label>
+              </li>
+              <li>
+                <label><input type ="radio" name="itemtype">
+                <span>United States</span>
+                </label>
+              </li>
+            </ul>
+            <div class="choose_loc"><a href="#">Choose a custom location</a></div>
+          </div><!--shops-location ends here-->
+          <div class="shipping">
+            <div class="ship-header">
+              <div class="ships-to"><h4>Ships To</h4>
+              <span class="clear"><a href="#">Clear</a></span></div>
+            </div><!--ship-header ends here-->
+            <div><!--start dropdown-->
+              <ul class="dropdown">
+                <li>
+                   <form class="common-form">
+                    <div class="locale-selector">
+                      <select class="ship-to-select">
+                        <option>Choose Country</option>
+                          <option value="AU">Australia</option>
+                          <option value="CA">Canada</option>
+                          <option value="FR">France</option>
+                          <option value="DE">Germany</option>
+                          <option value="IE">Ireland</option>
+                          <option value="IT">Italy</option>
+                          <option value="JP">Japan</option>
+                          <option value="NZ">New Zealand</option>
+                          <option value="PT">Portugal</option>
+                          <option value="RU">Russia</option>
+                          <option value="ES">Spain</option>
+                          <option value="NL">The Netherlands</option>
+                          <option value="GB">United Kingdom</option>
+                          <option value="US">United States</option>
+                      </select><!--ship-to-select-->
+                    </div><!--locale-selector-->
+                  </form>
+                </li>
+              </ul>
+            </div><!--stop dropdown-->
+          </div> <!--shipping ends here-->
+        </div><!--side-bar options-->
+      </div><!--side-bar ends here-->
       <div class= "items">
         <div class="search-header">
           <div class="keyword">"keyword" <span class="result-count">We found ##### items!</span></div>
-          <div class="sort-by">Sort by:</div>
+          <div class="sort-by">Sort by:<span> Relevancy</span></div>
         </div><!-- search-header ends here --> 
-        
         <div class="prod-content"></div> <!-- prod-content-->
+        <div class="footer-one">
+          <!-- <div class="search-results"> -->
+            <div class="related-to">Related to ___</div>
 
-      <div class="search-results">
-        <div class"related-to">Related to ___</div>
-          <div class="related-options">
-            <ul>
-              <li><a href="#"></a>1</li>
-              <li><a href="#"></a>2</li>
-              <li><a href="#"></a>3</li>
-            </ul> 
-          </div><!-- related-options ends here -->
-          <div class="shop-sug">
-            <p>Looking for shops?<span>link options here</span></p>
-          </div><!-- shop-sug ends here -->
-          <div class="pagnation">
-            <div class="pages">
-              <ol>
-                <li><a href="#"></a>1</li>
-                <li><a href="#"></a>2</li>
-                <li><a href="#"></a>3</li>
-                <li><a href="#"></a>4</li>
-                <li><a href="#"></a>5</li>
-                <li><a href="#"></a>6</li>
-                <li><a href="#"></a>7</li>
-                <li><a href="#"></a>8</li>
-                <li><a href="#"></a>9</li>
-                <li><a href="#"></a>10</li>
-              </ol>
-              <div class="arrow-buttons">
-                <a href="#"></a>
-                <a href="#"></a>
+            <div class="related-options">
+              <ul>
+                <li>consequuntur magni dolores</li>
+                <li>omnis iste</li>
+                <li>natus error sit</li>
+              </ul>
+              <ul>
+                <li>ex ea commodo consequa</li>
+                <li>eaque ipsa qua</li>
+                <li>nisi ut aliquid ex ea</li>
+              </ul>
+              <ul>
+                <li>mnis iste</li>
+                <li>dipisci velit, sed quia</li>
+                <li>molestiae consequatu</li>
+              </ul> 
+            </div><!-- related-options ends here -->
+            <div class="shop-sug">
+              <p>Looking for shops?<span> link options here</span></p>
+            </div><!-- shop-sug ends here -->
+
+            <div class="pagnums">
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+              </ul>
+            </div><!-- pagenums ends here -->
+            <div class="buttons">
+              <div class="arrow-buttons left">
+                <div class="arrowleft"></div>
+              </div>
+              <div class="arrow-buttons right">
+               <div class="arrowright"></div>
               </div><!-- arrow-buttons ends here -->
-            </div><!-- pages ends here -->
-          </div><!-- pagnation ends here -->
-        </div><!-- search-results ends here -->
-      </div><!-- items ends here -->
- 
-    </div><!--content ends here -->
-<!--content-->
+            </div>
+         <!-- </div>--><!-- search-results ends here -->
+        </div><!--footer-one ends here-->
+      </div><!--items-->
+    </div><!--content ends here-->
 
-    <div class="footer">
-      <div class="col-one">Column One</div>
-      <div class="col-two">Column Two</div>
-      <div class="col-three">Column Three</div>
-      <div class="col-four">Column Four</div>
-    </div><!--footer ends here --> 
-<!--footer-->
-
-  </div><!-- container ends here -->
+<!---footer-->
   
+
+  </div><!--container--> 
+  
+  
+
+
+
 </body>
 </html>
-
-
